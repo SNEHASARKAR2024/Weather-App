@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+  color: white;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #38bdf8;
+}
+
+.locationBtn {
+  background: #22c55e;
+}
+
+#weatherBox {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#forecast {
+  margin-top: 20px;
+}
+
+.forecast-day {
+  background: rgba(255,255,255,0.15);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+.loader {
+  border: 5px solid rgba(255,255,255,0.3);
+  border-top: 5px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+}
